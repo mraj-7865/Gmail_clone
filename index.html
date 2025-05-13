@@ -1,32 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-      <link rel="stylesheet" href="styles.css">
-      <title>Document</title>
-</head>
-<body>
-      <header class="navbar">
-<div class="left-nav">
-      <span class="material-symbols-outlined">menu</span>
-      <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png" alt="">
-</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gmail-clone</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="left-nav">
+        <span class="material-symbols-outlined">menu</span>
+        <img
+          src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+          alt=""
+        />
+      </div>
 
-<div class="search_bar">
-      <input type="text"  placeholder="  Search Here..."/>
-      <span class="material-symbols-outlined">search</span>
-     
-      
-</div>
+      <div class="search_bar">
+        <span class="material-symbols-outlined search_icon">search</span>
+        <input type="text" placeholder="  Search mail..." />
+      </div>
 
-<div class="right-nav">
-      <span class="material-symbols-outlined">apps</span>
-      <span class="material-symbols-outlined">notifications</span>
-      <span class="material-symbols-outlined">account_circle</span>
-</div>
-      </header>
+      <div class="right-nav">
+        <span class="material-symbols-outlined">apps</span>
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="material-symbols-outlined">account_circle</span>
+      </div>
+    </header>
 
-</body>
+    <!-- main body starts -->
+
+    <div class="main_body">
+      <!-- sidebar starts -->
+
+      <div class="sidebar">
+        <button class="sidebar_compose">
+          <span class="material-symbols-outlined">add</span>
+          Compose
+        </button>
+
+        <div class="sidebarOptions sidebarOption_active">
+          <div class="option hover">
+            <span class="material-symbols-outlined">inbox</span>
+            <h3>Inbox</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">star</span>
+            <h3>Starred</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">access_time</span>
+            <h3>Snoozed</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">label_important</span>
+            <h3>Important</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">access_time</span>
+            <h3>Snoozed</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">near_me</span>
+            <h3>Sent</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">note</span>
+            <h3>Drafts</h3>
+          </div>
+
+          <div class="option hover">
+            <span class="material-symbols-outlined">expand_more</span>
+            <h3>More</h3>
+          </div>
+        </div>
+
+        <div class="sidebar_footer">
+          <div class="sidebarbar_footer_icons">
+            <span class="material-symbols-outlined">person</span>
+            <span class="material-symbols-outlined">duo</span>
+            <span class="material-symbols-outlined">phone </span>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar ends -->
+
+      <!-- Email Settings Section starts -->
+
+      <div class="emailList_pages">
+        <div class="emailList_settings">
+          <div class="emailList_setting-left">
+            <input type="checkbox" name="checklist" id="" />
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+            <span class="material-symbols-outlined">redo</span>
+            <span class="material-symbols-outlined">more_vert</span>
+          </div>
+
+          <div class="emailList_setting-right">
+            <span class="material-symbols-outlined">keyboard</span>
+            <span class="material-symbols-outlined">arrow_drop_down</span>
+          </div>
+
+          <!-- email settings section ends -->
+
+
+          <div class="emailList_main-page"></div>
+        </div>
+      </div>
+
+    
+    </div>
+  </body>
 </html>

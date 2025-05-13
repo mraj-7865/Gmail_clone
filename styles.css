@@ -1,48 +1,157 @@
-*{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+  --bg-color: rgba(0, 0, 0, 0.052);
 }
 
-.navbar{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 20px;
+  background-color: white;
+}
+
+.material-symbols-outlined {
+  color: grey;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav > img {
+  margin-left: 10px;
+}
+
+.search_bar {
+  width: 700px;
+  height: 45px;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.search_bar > input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.search_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.right-nav > span {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* sidebar css */
+
+.sidebar {
+  padding-right: 20px;
+  width: 270px;
+}
+
+.sidebar_compose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: grey;
+  background-color: white;
+  padding: 10px;
+  margin: 10px 15px 10px 10px;
+  gap: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.sidebarOptions {
+  margin-left: 10px;
+}
+
+.sidebarOptions .option {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.option > h3 {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Options,
+.hover:hover {
+  background-color: #fcecec;
+  color: #c04b37;
+  font-weight: 800;
+  width: 20%;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main_body {
+  display: flex;
+  height: 100vh;
+}
+
+.emailList_pages {
+  width: 840px;
+  height: 100vh;
+  box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.emailList_settings{
       display: flex;
-      width: 100vw;
-      height: 60px;
-      justify-content: space-between;
-      align-items: center;
-      padding-inline: 20px;
-
+      background-color: white;
+     justify-content: space-between;
+     
+      
 }
 
-.left-nav{
+.emailList_setting-left{
       display: flex;
       align-items: center;
+      gap: 10px;
+
 }
 
-.left-nav>img{
-      margin-left: 10px;
+.emailList_setting-right{
+      margin-left: 600px;
+     
 }
 
-.search_bar{
-      display: flex;
-      align-items: center;
-}
 
-.search_bar>input{
-      width: 60vw;
-      height: 40px;
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.052);
-      border: none;
-      border-radius: 2px;
-      outline: none;
-}
-
-.right-nav{
-      display: flex;
-      align-items: center;
-}
-
-.right-nav>span{
-margin-right: 10px;
-}
